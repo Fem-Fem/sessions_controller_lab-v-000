@@ -3,9 +3,9 @@ class SessionsController < ApplicationController
   def create
     # binding.pry
     if params[:name] == nil
-      redirect to '/'
+      redirect to '/login'
     elsif params[:name].strip == ""
-      redirect to '/'
+      redirect to '/login'
     elsif params[:name]
       session[:name] = params[:name]
     if session[:name] = params[:name]

@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
     if params[:name] == nil
       redirect to '/'
     elsif params[:name].strip == ""
+      redirect to '/'
     elsif params[:name]
       session[:name] = params[:name]
     if session[:name] = params[:name]

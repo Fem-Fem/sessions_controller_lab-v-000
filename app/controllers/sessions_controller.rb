@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   def create
     # binding.pry
     session[:username] = params[:name]
+    redirect_to '/'
     redirect_to '/sessions/new'
   end
 

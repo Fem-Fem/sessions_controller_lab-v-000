@@ -8,9 +8,10 @@ class SessionsController < ApplicationController
       redirect to '/login'
     elsif params[:name]
       session[:name] = params[:name]
+    end
     if session[:name] = params[:name]
       redirect_to '/'
-    else
+    end
     # redirect_to '/sessions/new'
   end
 

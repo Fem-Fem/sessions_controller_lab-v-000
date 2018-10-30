@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     # binding.pry
     if params[:name] == nil
       redirect to '/'
-    if params[:name]
+    elsif params[:name]
       session[:name] = params[:name]
     if session[:name] = params[:name]
       redirect_to '/'

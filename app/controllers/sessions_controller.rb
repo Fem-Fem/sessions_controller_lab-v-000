@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     # binding.pry
     session[:username] = params[:name]
     redirect_to '/'
-    redirect_to '/sessions/new'
+    # redirect_to '/sessions/new'
   end
 
   def new

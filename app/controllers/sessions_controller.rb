@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def create
-    binding.pry
+    # binding.pry
     session[:username] = params[:name]
     redirect_to '/sessions/new'
   end
@@ -10,6 +10,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session.delete :username
+    session.delete :name
   end
 end

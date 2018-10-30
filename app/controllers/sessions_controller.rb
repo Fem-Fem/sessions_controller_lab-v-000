@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
                      action: 'new') if !params[:name] || params[:name].empty?
   session[:name] = params[:name]
   redirect_to controller: 'application', action: 'hello'
-end
+  end
 
 
   def new

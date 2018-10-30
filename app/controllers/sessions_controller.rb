@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
     if session[:name] = params[:name]
       redirect_to '/'
     end
-    # redirect_to '/sessions/new'
   end
 
   def new

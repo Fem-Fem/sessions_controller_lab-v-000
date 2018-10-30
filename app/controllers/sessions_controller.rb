@@ -4,8 +4,6 @@ class SessionsController < ApplicationController
     # binding.pry
     if params[:name] == nil || params[:name].strip == ""
       redirect_to '/login'
-    elsif params[:name].strip == ""
-      redirect_to '/login'
     elsif params[:name]
       session[:name] = params[:name]
     end
